@@ -11,7 +11,8 @@ export default function WorksContainer() {
     >
         <motion.h1 
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
           transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
           className="max-w-xs text-5xl font-semibold leading-20 mx-auto tracking-tight text-zinc-50">
           Works

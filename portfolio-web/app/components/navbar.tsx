@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 
 export default function Navbar() {
   const [activeSection, setActiveSection] = useState("about");
@@ -52,15 +51,6 @@ export default function Navbar() {
             }`}
           >
             {link.label}
-
-            {/* Moving Underline Effect */}
-            {/* {activeSection === link.id && (
-              <motion.span
-                layoutId="underline-none"
-                className="absolute left-0 top-full block h-[2px] w-full bg-white"
-                transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              />
-            )} */}
           </Link>
         ))}
       </div>

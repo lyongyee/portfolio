@@ -1,3 +1,4 @@
+
 import RoundedImageWithBorder from "./roundimage";
 import TypeWriter from 'typewriter-effect';
 import {motion} from "framer-motion"
@@ -30,7 +31,6 @@ export default function HomeContainer() {
         
     </motion.div>
 
-      {/* Optional: Smoothly fade in the subtitle after typing is done */}
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -53,7 +53,6 @@ export default function HomeContainer() {
           y: { duration: 1.5, repeat: Infinity, ease: "easeInOut" } // Loops forever
         }}
       >
-        {/* Helper function to smooth scroll when clicked */}
         <a 
             href="#works"
             onClick={(e) => {
@@ -62,7 +61,6 @@ export default function HomeContainer() {
             }}
             className="text-zinc-400 hover:text-white transition-colors"
         >
-          {/* Simple Chevron Down SVG */}
           <svg 
             width="40" 
             height="40" 
